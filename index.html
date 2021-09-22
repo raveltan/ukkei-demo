@@ -15,7 +15,13 @@
       <p class="subtitle">
         This is a microapp based on the ukkei architecture
       </p>
+      <button class="button is-fullwidth" onclick="showUDialog()">Ukkei Dialog</button>
     </div>
   </section>
+  <script>
+    const showUDialog = () =>{ 
+        window.udialog.postMessage(JSON.stringify({title:'Hello From JS', content:'this is a native dialog invocation called from js using ukkei native bridge', dismisable: false})); 
+    }
+  </script>
   </body>
 </html>
