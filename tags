@@ -3353,6 +3353,7 @@ desc	app.json	/^    "desc": "Demo application using the Ukkei microapp architect
 developer	app.json	/^    "developer": "Ravel Tanjaya",$/;"	s
 div.icon-text	bulma.min.css	/^\/*! bulma.io v0.9.3 | MIT License | github.com\/jgthms\/bulma *\/.button,.file-cta,.file-name,./;"	c
 dl	bulma.min.css	/^\/*! bulma.io v0.9.3 | MIT License | github.com\/jgthms\/bulma *\/.button,.file-cta,.file-name,./;"	s
+dr	index.html	/^       <p id="dr">Dialog Result<\/p>$/;"	I
 dt	bulma.min.css	/^\/*! bulma.io v0.9.3 | MIT License | github.com\/jgthms\/bulma *\/.button,.file-cta,.file-name,./;"	s
 fieldset	bulma.min.css	/^\/*! bulma.io v0.9.3 | MIT License | github.com\/jgthms\/bulma *\/.button,.file-cta,.file-name,./;"	s
 fieldset[disabled] .button	bulma.min.css	/^\/*! bulma.io v0.9.3 | MIT License | github.com\/jgthms\/bulma *\/.button,.file-cta,.file-name,./;"	c
