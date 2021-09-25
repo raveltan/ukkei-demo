@@ -3,4 +3,6 @@
     "desc": "Demo application using the Ukkei microapp architecture",
     "icon": "icon.png",
     "developer": "Ravel Tanjaya",
+    "appId": "com.buatkode.ukkeidemo",
+    "appVersion": "0.0.3",
 }

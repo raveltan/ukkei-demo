@@ -3331,6 +3331,8 @@ a.panel-block	bulma.min.css	/^\/*! bulma.io v0.9.3 | MIT License | github.com\/j
 a.panel-block:hover	bulma.min.css	/^\/*! bulma.io v0.9.3 | MIT License | github.com\/jgthms\/bulma *\/.button,.file-cta,.file-name,./;"	c
 a.tag:hover	bulma.min.css	/^\/*! bulma.io v0.9.3 | MIT License | github.com\/jgthms\/bulma *\/.button,.file-cta,.file-name,./;"	c
 a:hover	bulma.min.css	/^\/*! bulma.io v0.9.3 | MIT License | github.com\/jgthms\/bulma *\/.button,.file-cta,.file-name,./;"	s
+appId	app.json	/^    "appId": "com.buatkode.ukkeidemo",$/;"	s
+appVersion	app.json	/^    "appVersion": "0.0.3",$/;"	s
 article	bulma.min.css	/^\/*! bulma.io v0.9.3 | MIT License | github.com\/jgthms\/bulma *\/.button,.file-cta,.file-name,./;"	s
 aside	bulma.min.css	/^\/*! bulma.io v0.9.3 | MIT License | github.com\/jgthms\/bulma *\/.button,.file-cta,.file-name,./;"	s
 blockquote	bulma.min.css	/^\/*! bulma.io v0.9.3 | MIT License | github.com\/jgthms\/bulma *\/.button,.file-cta,.file-name,./;"	s
