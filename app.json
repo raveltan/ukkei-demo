@@ -4,5 +4,6 @@
     "icon": "icon.png",
     "developer": "Ravel Tanjaya",
     "appId": "com.buatkode.ukkeidemo",
-    "appVersion": "0.0.3",
+    "appType": "application/utils",
+    "appVersion": "0.0.3"
 }
