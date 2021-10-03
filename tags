@@ -3268,7 +3268,7 @@
 .title:not(:last-child)	bulma.min.css	/^\/*! bulma.io v0.9.3 | MIT License | github.com\/jgthms\/bulma *\/.button,.file-cta,.file-name,./;"	c
 ::after	bulma.min.css	/^\/*! bulma.io v0.9.3 | MIT License | github.com\/jgthms\/bulma *\/.button,.file-cta,.file-name,./;"	s
 ::before	bulma.min.css	/^\/*! bulma.io v0.9.3 | MIT License | github.com\/jgthms\/bulma *\/.button,.file-cta,.file-name,./;"	s
-Hello World	index.html	/^      <\/h1>$/;"	h
+Hello World	index.html	/^        <h1 class="title">Hello World<\/h1>$/;"	h
 a	bulma.min.css	/^\/*! bulma.io v0.9.3 | MIT License | github.com\/jgthms\/bulma *\/.button,.file-cta,.file-name,./;"	s
 a strong	bulma.min.css	/^\/*! bulma.io v0.9.3 | MIT License | github.com\/jgthms\/bulma *\/.button,.file-cta,.file-name,./;"	s
 a.box:active	bulma.min.css	/^\/*! bulma.io v0.9.3 | MIT License | github.com\/jgthms\/bulma *\/.button,.file-cta,.file-name,./;"	c
@@ -3345,6 +3345,7 @@ body.has-navbar-fixed-top-desktop	bulma.min.css	/^\/*! bulma.io v0.9.3 | MIT Lic
 body.has-navbar-fixed-top-touch	bulma.min.css	/^\/*! bulma.io v0.9.3 | MIT License | github.com\/jgthms\/bulma *\/.button,.file-cta,.file-name,./;"	c
 body.has-spaced-navbar-fixed-bottom	bulma.min.css	/^\/*! bulma.io v0.9.3 | MIT License | github.com\/jgthms\/bulma *\/.button,.file-cta,.file-name,./;"	c
 body.has-spaced-navbar-fixed-top	bulma.min.css	/^\/*! bulma.io v0.9.3 | MIT License | github.com\/jgthms\/bulma *\/.button,.file-cta,.file-name,./;"	c
+br	index.html	/^        <p id="br">Biometric result<\/p>$/;"	I
 button	bulma.min.css	/^\/*! bulma.io v0.9.3 | MIT License | github.com\/jgthms\/bulma *\/.button,.file-cta,.file-name,./;"	s
 button.dropdown-item	bulma.min.css	/^\/*! bulma.io v0.9.3 | MIT License | github.com\/jgthms\/bulma *\/.button,.file-cta,.file-name,./;"	c
 button.dropdown-item.is-active	bulma.min.css	/^\/*! bulma.io v0.9.3 | MIT License | github.com\/jgthms\/bulma *\/.button,.file-cta,.file-name,./;"	c
@@ -3355,8 +3356,8 @@ desc	app.json	/^    "desc": "Demo application using the Ukkei microapp architect
 developer	app.json	/^    "developer": "Ravel Tanjaya",$/;"	s
 div.icon-text	bulma.min.css	/^\/*! bulma.io v0.9.3 | MIT License | github.com\/jgthms\/bulma *\/.button,.file-cta,.file-name,./;"	c
 dl	bulma.min.css	/^\/*! bulma.io v0.9.3 | MIT License | github.com\/jgthms\/bulma *\/.button,.file-cta,.file-name,./;"	s
-dpr	index.html	/^      <p id="dpr">DatePicker Result (milliseconds since epoch)<\/p>$/;"	I
-dr	index.html	/^       <p id="dr">Dialog Result<\/p>$/;"	I
+dpr	index.html	/^        <p id="dpr">DatePicker Result (milliseconds since epoch)<\/p>$/;"	I
+dr	index.html	/^        <p id="dr">Dialog Result<\/p>$/;"	I
 dt	bulma.min.css	/^\/*! bulma.io v0.9.3 | MIT License | github.com\/jgthms\/bulma *\/.button,.file-cta,.file-name,./;"	s
 fieldset	bulma.min.css	/^\/*! bulma.io v0.9.3 | MIT License | github.com\/jgthms\/bulma *\/.button,.file-cta,.file-name,./;"	s
 fieldset[disabled] .button	bulma.min.css	/^\/*! bulma.io v0.9.3 | MIT License | github.com\/jgthms\/bulma *\/.button,.file-cta,.file-name,./;"	c
@@ -3465,7 +3466,7 @@ section	bulma.min.css	/^\/*! bulma.io v0.9.3 | MIT License | github.com\/jgthms\
 select	bulma.min.css	/^\/*! bulma.io v0.9.3 | MIT License | github.com\/jgthms\/bulma *\/.button,.file-cta,.file-name,./;"	s
 small	bulma.min.css	/^\/*! bulma.io v0.9.3 | MIT License | github.com\/jgthms\/bulma *\/.button,.file-cta,.file-name,./;"	s
 span	bulma.min.css	/^\/*! bulma.io v0.9.3 | MIT License | github.com\/jgthms\/bulma *\/.button,.file-cta,.file-name,./;"	s
-sr	index.html	/^      <p id="sr">Action not clicked<\/p>$/;"	I
+sr	index.html	/^        <p id="sr">Action not clicked<\/p>$/;"	I
 strong	bulma.min.css	/^\/*! bulma.io v0.9.3 | MIT License | github.com\/jgthms\/bulma *\/.button,.file-cta,.file-name,./;"	s
 table	bulma.min.css	/^\/*! bulma.io v0.9.3 | MIT License | github.com\/jgthms\/bulma *\/.button,.file-cta,.file-name,./;"	s
 table td	bulma.min.css	/^\/*! bulma.io v0.9.3 | MIT License | github.com\/jgthms\/bulma *\/.button,.file-cta,.file-name,./;"	s
@@ -3477,7 +3478,7 @@ td:not([align] )	bulma.min.css	/^\/*! bulma.io v0.9.3 | MIT License | github.com
 textarea	bulma.min.css	/^\/*! bulma.io v0.9.3 | MIT License | github.com\/jgthms\/bulma *\/.button,.file-cta,.file-name,./;"	s
 th	bulma.min.css	/^\/*! bulma.io v0.9.3 | MIT License | github.com\/jgthms\/bulma *\/.button,.file-cta,.file-name,./;"	s
 th:not([align] )	bulma.min.css	/^\/*! bulma.io v0.9.3 | MIT License | github.com\/jgthms\/bulma *\/.button,.file-cta,.file-name,./;"	s
-tpr	index.html	/^      <p id="tpr">Time Picker result<\/p>$/;"	I
+tpr	index.html	/^        <p id="tpr">Time Picker result<\/p>$/;"	I
 ukkei-demo	README.md	/^# ukkei-demo$/;"	c
 ul	bulma.min.css	/^\/*! bulma.io v0.9.3 | MIT License | github.com\/jgthms\/bulma *\/.button,.file-cta,.file-name,./;"	s
 video	bulma.min.css	/^\/*! bulma.io v0.9.3 | MIT License | github.com\/jgthms\/bulma *\/.button,.file-cta,.file-name,./;"	s
