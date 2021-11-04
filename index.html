@@ -23,6 +23,8 @@
       <p id="sr">Action not clicked</p>
       <button class="button is-fullwidth" onclick="showUTimePicker()">Ukkei Time Picker</button>
       <p id="tpr">Time Picker result</p>
+      <button class="button is-fullwidth" onclick="showUScanner()">Ukkei Scanner</button>
+      <p id="scr">Scanner result</p>
     </div>
   </section>
   <script>
@@ -50,6 +52,12 @@
     }
     window.cutimepicker = (data) => {
         document.querySelector('#tpr').textContent = `hour: ${data.hour}, minute: ${data.minute}`;
+    }
+    const showUScanner = () => {
+        window.uscanner.postMessage('');
+    }
+    window.cuscanner = (data) => {
+        document.querySelector('#scr').textContent = `message ${data.result.code}`;
     }
   </script>
   </body>
