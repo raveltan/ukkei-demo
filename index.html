@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Ukkei Demo</title>
-    <link rel="stylesheet" href="./bulma.min.css">
-  </head>
-  <body>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ukkei Demo</title>
+  <link rel="stylesheet" href="./bulma.min.css">
+</head>
+
+<body>
   <section class="section">
     <div class="container">
       <h1 class="title">
@@ -16,41 +18,71 @@
         This is a microapp based on the ukkei architecture
       </p>
       <button class="button is-fullwidth" onclick="showUDialog()">Ukkei Dialog</button>
-       <p id="dr">Dialog Result</p>
+      <p id="dr">Dialog Result</p>
       <button class="button is-fullwidth" onclick="showUDatePicker()">Ukkei Date Picker</button>
       <p id="dpr">DatePicker Result (milliseconds since epoch)</p>
       <button class="button is-fullwidth" onclick="showUSnack()">Ukkei Snackbar</button>
       <p id="sr">Action not clicked</p>
       <button class="button is-fullwidth" onclick="showUTimePicker()">Ukkei Time Picker</button>
       <p id="tpr">Time Picker result</p>
+      <button class="button is-fullwidth" onclick="showUScanner()">Ukkei Scanner</button>
+      <p id="scr">Scanner result</p>
+      <button class="button is-fullwidth" onclick="callUHTTP()">Ukkei HTTP</button>
+      <p id="htp">HTTP Response</p>
     </div>
   </section>
   <script>
-    const showUDialog = () =>{ 
-        window.udialog.postMessage(JSON.stringify({title:'Hello From JS', content:'this is a native dialog invocation called from js using ukkei native bridge', dismisable: false, isConfirm: false, cancelText: 'Great', cancelText: 'no..'})); 
+    const showUDialog = () => {
+      window.udialog.postMessage(JSON.stringify({ title: 'Hello From JS', content: 'this is a native dialog invocation called from js using ukkei native bridge', dismisable: false, isConfirm: false, cancelText: 'Great', cancelText: 'no..' }))
     }
     window.cudialog = (data) => {
-        document.querySelector('#dr').textContent = data.result;
+      document.querySelector('#dr').textContent = data.result
     }
 
     const showUDatePicker = () => {
-        window.udatepicker.postMessage(JSON.stringify({initialDate: 1632323796518, startDate: 1630323796518, endDate: 1692023796518}));
+      window.udatepicker.postMessage(JSON.stringify({ initialDate: 1632323796518, startDate: 1630323796518, endDate: 1692023796518 }))
     }
     window.cudatepicker = (data) => {
-        document.querySelector('#dpr').textContent = data.result;
+      document.querySelector('#dpr').textContent = data.result
     }
     const showUSnack = () => {
-        window.usnack.postMessage(JSON.stringify({content:'Hello there', action:'Ok'}))
+      window.usnack.postMessage(JSON.stringify({ content: 'Hello there', action: 'Ok' }))
     }
     window.cusnack = (_) => {
-        document.querySelector('#sr').textContent = 'Action Clicked';
+      document.querySelector('#sr').textContent = 'Action Clicked'
     }
     const showUTimePicker = () => {
-        window.utimepicker.postMessage(JSON.stringify({hour:20, minute: 40}))
+      window.utimepicker.postMessage(JSON.stringify({ hour: 20, minute: 40 }))
     }
     window.cutimepicker = (data) => {
-        document.querySelector('#tpr').textContent = `hour: ${data.hour}, minute: ${data.minute}`;
+      document.querySelector('#tpr').textContent = `hour: ${data.hour}, minute: ${data.minute}`
+    }
+    const showUScanner = () => {
+      window.uscanner.postMessage('')
+    }
+    window.cuscanner = (data) => {
+      document.querySelector('#scr').textContent = `message: ${data.result.code}`
+    }
+    const callUHTTP = () => {
+      window.uhttp.postMessage(JSON.stringify({
+        'method': 'GET',
+        'url': 'https://api.github.com/repos/raveltan/ukkei-demo'
+      }))
+    }
+    window.cuhttp = (data) => {
+      let message = ''
+      if (data.error == null) {
+        message = `status: ${data.response.status}, message: ${data.response['status-message']}`
+      } else {
+        if (data.error.type == 'UnkownError') {
+          message = `error: ${data.error.error}`
+        } else {
+          message = `error: ${data.error.type}`
+        }
+      }
+      document.querySelector('#htp').textContent = message
     }
   </script>
-  </body>
+</body>
+
 </html>
